@@ -28,8 +28,6 @@
   background-color: #cdebff;
 }
 
-
-
 .navbar h2 {
   text-transform: uppercase;
   color: black;
@@ -42,6 +40,10 @@
 
 .navbar li {
   margin: auto 1em;
+}
+
+.navbar li:hover{
+  border-bottom:1px solid teal;
 }
 
 .navbar a {

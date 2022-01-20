@@ -48,7 +48,7 @@
 }
 
 .social_link{
-    background: #80D8FF;
+    background: #58aaf6;
     color:white;
     width: 30px;
     height: 30px;
@@ -78,7 +78,7 @@
 }
 
 .container1 h1{
-    font-size: 3.5em;
+    font-size: 3.5rem;
     
 }
 
@@ -88,7 +88,7 @@
 }
 
 .container1 p{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color:#607D8B;
 }
 
@@ -147,5 +147,19 @@
   .navbar li{
     margin: 1rem 1rem;
   }
+
+  .container1{
+    margin-top: 3rem;
+    width: 70%;
+  }
+
+  .container1 h1{
+    font-size: 2rem;
+  }
+
+  .container1 p{
+    font-size: 0.8rem;
+  }
+
 
 }

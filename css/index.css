@@ -25,7 +25,7 @@
 }
 
 .bg_colored{
-  background-color: #ECEFF1;
+  background-color: #cdebff;
 }
 
 
@@ -160,7 +160,9 @@
     flex-direction: column;
     height: 3.5rem;
   }
-
+  #menu{
+    width: 100%;
+  }
   /* brands */
 
   .brands{

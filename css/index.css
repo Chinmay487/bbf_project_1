@@ -261,6 +261,8 @@
 
 .grid_item_2 li:before ,.grid_item_2_rev li:before{
   content: '✓';
+  font-weight: bolder;
+  color:darkcyan;
 }
 
 .grid_item_2 button ,.grid_item_2_rev button{
@@ -410,7 +412,7 @@
   .grid_item_2_rev{
     display: grid;
     grid-template-columns: 100%;
-    /* background-color: red; */
+    row-gap: 4%;
   }
 
   .grid_item_2_rev img:nth-child(1){

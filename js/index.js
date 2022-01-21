@@ -11,7 +11,7 @@ const onBurgerClick = () => {
 
 }
 
-var myNav = document.getElementById('navbar');
+let myNav = document.getElementById('navbar');
 window.onscroll =  () => { 
     "use strict";
     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50 ) {
@@ -23,5 +23,18 @@ window.onscroll =  () => {
         myNav.classList.remove("bg_colored");
     }
 };
+
+
+
+let gridRev = document.getElementById("item_rev")
+let currentWidth = window.screen.availWidth;
+console.log(currentWidth)
+if(currentWidth <= 800){
+    gridRev.classList.remove('grid_item_2');
+    gridRev.classList.add('grid_item_2_rev');
+} else {
+    gridRev.classList.add('grid_item_2');
+    gridRev.classList.remove('grid_item_2_rev');
+}
 
 

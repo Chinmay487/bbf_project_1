@@ -207,6 +207,76 @@
   margin: 0 auto;
 }
 
+.grid_container_2{
+  width: 85%;
+  margin:10rem auto;
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 2%;
+}
+
+.grid_item_2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,48%);
+  column-gap: 2%;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.grid_item_2 img,.grid_item_2_rev img{
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin:0 auto;
+  /* border: 1px solid blue; */
+}
+
+.grid_item_2 div, .grid_item_2_rev div{
+  /* border: 1px solid red; */
+  height: 100%;
+  width: 100%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+}
+
+.grid_item_2 h1, .grid_item_2_rev h1{
+  font-size: 3vw;
+  margin: 2rem auto;
+}
+
+
+.grid_item_2 p,.grid_item_2 ul ,.grid_item_2_rev ul{
+  font-size: 2vw;
+}
+
+.grid_item_2 ul,.grid_item_2_rev ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid_item_2 li:before ,.grid_item_2_rev li:before{
+  content: '✓';
+}
+
+.grid_item_2 button ,.grid_item_2_rev button{
+  width: 7rem;
+  height: 4rem;
+  margin:2% auto;
+  background-color: skyblue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+
+}
+
+
 
 @media screen and (max-width: 1100px) {
   /* Navbar */
@@ -239,8 +309,22 @@
     font-size: 1.8vw;
   }
 
+  /* grid 2 */
+
+  .grid_container_2{
+    margin-top: 15rem;
+    width: 100%;
+  }
+
+  .grid_item_2{
+    width: 100%;
+    grid-template-columns: repeat(2,49%);
+    column-gap: 1%;
+  }
 
 }
+
+
 
 @media screen and (max-width: 800px) {
   /* Navbar */
@@ -305,18 +389,36 @@
     margin: 1% auto;
   }
 
-  /* .grid_container{
-    grid-template-columns:100%;
-    row-gap: 1%;
+  /* grid 2 */
+  .grid_item_2{
+    grid-template-columns: 100%;
+    row-gap: 0;
   }
 
-  .grid_item h1{
+  .grid_item_2 img,.grid_item_2_rev img{
+    height: 20rem;
+  }
+
+  .grid_item_2 h1,.grid_item_2_rev h1{
+    font-size: 8vw;
+  }
+
+  .grid_item_2 p,.grid_item_2 ul,.grid_item_2_rev ul{
     font-size: 4vw;
   }
 
-  .grid_item p{
-    font-size: 2.6vw;
-  } */
+  .grid_item_2_rev{
+    display: grid;
+    grid-template-columns: 100%;
+    /* background-color: red; */
+  }
+
+  .grid_item_2_rev img:nth-child(1){
+    order: 2;
+  }
+  .grid_item_2_rev div:nth-child(2){
+    order:1
+  }
 
 }
 

@@ -511,8 +511,6 @@
   padding: 2%;
 }
 
-
-
 .contact_info_form button{
   background-color: rgb(6, 190, 190);
   color: white;
@@ -528,6 +526,62 @@
 .contact_input_2{
   margin: 1rem auto;
   width: 100%;
+}
+
+/* footer */
+
+.footer{
+  margin: 10rem auto;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.footer a{
+  color: darkcyan;
+}
+
+
+.footer_list{
+  list-style: none;
+  width: 80%;
+  margin: 1rem auto;
+  /* display: flex;
+  justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: repeat(3,32%);
+  column-gap: 2%;
+  border-bottom: 1px solid gray;
+}
+
+.footer_list li{
+  text-align: center;
+  /* background: green; */
+}
+
+.footer_list ul{
+  list-style: none;
+}
+
+.social_media{
+  display: flex;
+  justify-content: space-evenly;
+  /* font-size: ; */
+}
+
+.social_media li{
+  margin: 1rem auto;
+  height: 40px;
+  width: 40px;
+  font-size: 1.6rem;
+}
+
+
+.social_media a{
+  color:white;
+}
+
+.footer p{
+  text-align: center;
 }
 
 
@@ -630,6 +684,11 @@
   }
 
   .contact_info_form textarea{
+    width: 90%;
+  }
+
+  /* footer */
+  .footer_list{
     width: 90%;
   }
 
@@ -789,6 +848,12 @@
 
   .contact_info_form iframe{
     width: 90%;
+  }
+  /* footer */
+  .footer_list{
+    width: 80%;
+    grid-template-columns: 100%;
+    row-gap: 2rem;
   }
 }
 

@@ -24,6 +24,16 @@ window.onscroll =  () => {
     }
 };
 
+let arrow = document.getElementById('arrow')
+window.onscroll = () => {
+    "use strict";
+    if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300 ){
+        arrow.style.display = "block";
+    } else {
+        arrow.style.display = "none";
+    }
+}
+
 
 
 let gridRev = document.getElementById("item_rev")

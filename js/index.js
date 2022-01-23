@@ -12,27 +12,30 @@ const onBurgerClick = () => {
 }
 
 let myNav = document.getElementById('navbar');
+let arrow = document.getElementById('arrow')
 window.onscroll =  () => { 
     "use strict";
     if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50 ) {
         myNav.classList.add("bg_colored");
         myNav.classList.remove("bg_transparent");
+        arrow.style.display = "block";
     } 
     else {
         myNav.classList.add("bg_transparent");
         myNav.classList.remove("bg_colored");
+        arrow.style.display = "none";
     }
 };
 
-let arrow = document.getElementById('arrow')
-window.onscroll = () => {
-    "use strict";
-    if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300 ){
-        arrow.style.display = "block";
-    } else {
-        arrow.style.display = "none";
-    }
-}
+
+// window.onscroll = () => {
+//     "use strict";
+//     if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300 ){
+       
+//     } else {
+        
+//     }
+// }
 
 
 

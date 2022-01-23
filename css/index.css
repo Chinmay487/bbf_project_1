@@ -778,6 +778,15 @@
     margin: auto;
   }
   /* contact info form */
+  .contact_info_form{
+    row-gap: 4rem;
+  }
+
+  .contact_info_form form{
+    height: 90%;
+    margin-top: 1rem;
+  }
+
   .contact_info_form iframe{
     width: 90%;
   }
@@ -801,11 +810,11 @@
   }
 
   .grid_item h1 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   .grid_item p {
-    font-size: 3.6vw;
+    font-size: 3vw;
   }
 
   .prices {
@@ -814,5 +823,11 @@
 
   .grid_container_3 {
     grid-template-columns: 100%;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .grid_item p{
+    font-size: 3.8vw;
   }
 }
